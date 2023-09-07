@@ -10,9 +10,8 @@ from datetime import datetime
 def is_inside_roi(x, y, w, h, roi):
     return x >= roi[0] and y >= roi[1] and w <= roi[2]and h <= roi[3]   
 
-
+# This code block is for ROI  
 def Region (r):
-
     cv2.rectangle(annotated_frame,(r[0], r[1]), (r[2], r[3]), (255, 0, 0), 2)
     return annotated_frame
 
